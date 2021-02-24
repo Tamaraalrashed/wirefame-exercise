@@ -20,6 +20,8 @@ header {
 
 header img {
 float: left;
+
+ margin-top: 0px;
 }
 
 
@@ -28,8 +30,9 @@ a {
   text-align: center;
   padding: 20px 20px;
   text-decoration: none;
-  color:black;
+  color:white;
   background-color: #ddd;
+  border-right: 1px 
 
 }
 
@@ -51,20 +54,41 @@ a {
     overflow: auto;
   }
   
-   article:nth-child(1){
+  main,img{
+    margin-top: 10px;
+  }
+   main article:nth-child(1){
     width: calc(100%/3);
     float: left;
     justify-content: center;
   }
 
 
-main article:nth-child(1) img{
+main article img{
   float: left;
+  margin-top: 10px;
+
+
 } 
 
-main article p {
- float:right;
-   overflow: scroll;
+main article img:nth-child(2){
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+
+ article{
+  width:50% ;
+  margin-top: 20px;
+  float:left;
+}
+
+main article:nth-child(2){
+  width:100% ;
+}
+ p {
+overflow: scroll;
+float: right;
 }
 
 
@@ -72,4 +96,11 @@ footer{
   clear: both;
 background:#ddd;
 background-size: 100%;
+width: 1150px;
+height: 90px;
+
+display: block;
+margin-left: auto;
+margin-right: auto;
+
 }
